@@ -1,0 +1,78 @@
+:root {
+
+    font-family: "outfit", "mukta", "Arial - modified";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+
+
+
+    --background: #ede8d3;
+    --blue1:#00527e;
+    --blue2: #0081ae;
+    --blue3:#0097bf;
+    --blue4:#4bc5d2;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+    font-family: "Arial - modified";
+    size-adjust: 92%;
+    
+    src: local(Arial);
+}
+  
+@font-face { /*see https://www.youtube.com/watch?v=zK-yy6C2Nck&t=108s*/
+    font-family: "mukta";
+    src: url('./assets/fonts/mukta-regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/mukta-regular-webfont.woff') format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  
+  
+body {
+    margin: 0;
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+
+  
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue4);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue2);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+        background-color: var(--background);
+}
+
+
+::selection {
+color: #1c1c1c;
+    /*background: #46cb9f;*/
+    background: var(--blue1);
+}  
