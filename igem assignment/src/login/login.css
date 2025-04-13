@@ -16,3 +16,7 @@
   transform: rotate(45deg) translateX(-310px);
   position: absolute;
 }
+
+body{
+  background-image: radial-gradient(circle, #ede8d3, #efead8, #f1ecdc, #f2efe1, #f4f1e6, #f5f3e9, #f7f4ec, #f8f6ef, #f9f8f1, #faf9f3, #fcfbf5, #fdfcf7);
+}
