@@ -1,9 +1,14 @@
+body{
+  background-image: radial-gradient(circle, #ede8d363, #efead863, #f1ecdc63, #f2efe163, #f4f1e663, #f5f3e963, #f7f4ec63, #f8f6ef63, #f9f8f163, #faf9f363, #fcfbf563, #fdfcf763);
+
+}
+
 
 /*top left logo of login. a series of transform rotates, translations*/
 .logo{
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  width: 8vw;
+  height: 8vw;
   transform: rotate(-45deg) translate(28px, -15px);
 }
 
@@ -15,8 +20,118 @@
   background-color: var(--background);
   transform: rotate(45deg) translateX(-310px);
   position: absolute;
+  top:0;
+  left:0;
+  z-index: 5;
 }
 
-body{
-  background-image: radial-gradient(circle, #ede8d3, #efead8, #f1ecdc, #f2efe1, #f4f1e6, #f5f3e9, #f7f4ec, #f8f6ef, #f9f8f1, #faf9f3, #fcfbf5, #fdfcf7);
+/*the central image*/
+.img_container{
+  width: 100%;
+  height: 100%;
+
+  transition: width 2s ease, height 2s ease, transform 2s ease;
+
+  position: relative;
+  margin:auto;
+
+}
+
+
+.img_container::after{
+  content: '';
+  inset: 0;
+  z-index: 4;
+  background-image: radial-gradient(circle, #ede8d362, #efead862, #f1ecdc62, #f2efe162, #f4f1e662, #f5f3e962, #f7f4ec62, #f8f6ef62, #f9f8f162, #faf9f362, #fcfbf562, #fdfcf762);
+  position: absolute;
+  mix-blend-mode: overlay;
+  
+  transition: transform 2s ease;
+  
+  border: 12px solid #ede8d353;
+  
+  margin-block: 82px;
+  margin-inline: 82px;
+  border-radius: 4vw;
+}
+
+.hero_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+
+  opacity: 0;
+  display: block; 
+
+  animation: FadeTransition 42s infinite;
+  animation-fill-mode: both;
+
+  animation-delay: calc(var(--index, 0) * 3s);
+}
+.main_img_text{
+  position: absolute;
+  bottom: 120px;
+  left: 135px;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+}
+
+.img_container .hero_img {
+  --index: 0;
+}
+
+.img_container .hero_img:nth-child(1) { --index: 0; }
+.img_container .hero_img:nth-child(2) { --index: 1; }
+.img_container .hero_img:nth-child(3) { --index: 2; }
+.img_container .hero_img:nth-child(4) { --index: 3; }
+.img_container .hero_img:nth-child(5) { --index: 4; }
+.img_container .hero_img:nth-child(6) { --index: 5; }
+.img_container .hero_img:nth-child(7) { --index: 6; }
+.img_container .hero_img:nth-child(8) { --index: 7; }
+.img_container .hero_img:nth-child(9) { --index: 8; }
+.img_container .hero_img:nth-child(10) { --index: 9; }
+.img_container .hero_img:nth-child(11) { --index: 10; }
+
+
+@keyframes FadeTransition{
+  0%{
+    opacity: 0;
+    display: block;
+    z-index: 2;
+  }
+  4%{
+    opacity: 1;
+  }
+  46%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  51%{
+    display: none;
+    z-index: 1;
+  }
+
+
+  100%{
+    opacity: 0;
+
+  }
+
+}
+
+
+body:hover .img_container {
+  width: 70%;
+  height: 70%;
+  transform: translateY(17%);
+}
+
+body:hover .img_container::after {
+  transform: scale(1.1);
+  
 }
