@@ -2,24 +2,6 @@
 import logo from '../assets/imgs/CAL_logo.png'
 
 
-import gulf from './imgs/gulf.webp'
-
-import lancia1 from './imgs/lancia2.jpg'
-import lancia2 from './imgs/lancia3.webp'
-import lancia3 from './imgs/lancia4.jpg'
-import martini from './imgs/martini.jpg'
-
-import jps from './imgs/jps.jpg'
-import jps2 from './imgs/jpsC.png'
-
-import ms_marl from './imgs/michael_schumacher_ferrari_marlboro3.jpg'
-
-import quattro1 from './imgs/quattro_s1.avif'
-
-import quattro2 from './imgs/replica_s1.jpg'
-
-import senna_marl from './imgs/senna_marl.jpg'
-
 import './login.css'
 
 function App() {
@@ -39,18 +21,23 @@ function App() {
           <img className='logo' src={logo} alt="Classic Autosport Liveries Logo"/>
         </div>
 
-        <div className='img_container'>
-          <img className='hero_img' src={quattro2} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={lancia2} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={martini} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={jps} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={quattro1} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={lancia3} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={gulf} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={ms_marl} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={lancia1} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={jps2} alt="Classic Autosport Liveries Logo"/>
-          <img className='hero_img' src={senna_marl} alt="Classic Autosport Liveries Logo"/>
+        <div style={{width: "100%", height:"100%"}}>
+
+          <div className='img_container'>
+            <div className='hero_img img1'></div>
+            <div className='hero_img img2'></div>
+            <div className='hero_img img3'></div>
+            <div className='hero_img img4'></div>
+            <div className='hero_img img5'></div>
+            <div className='hero_img img6'></div>
+            <div className='hero_img img7'></div>
+            <div className='hero_img img8'></div>
+            <div className='hero_img img9'></div>
+            <div className='hero_img img10'></div>
+            <div className='hero_img img11'></div>
+            <div className='hero_img img12'></div>
+            <div className='hero_img img13'></div>
+          </div>
         </div>
 
         

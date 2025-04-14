@@ -1,5 +1,5 @@
 body{
-  background-image: radial-gradient(circle, #ede8d363, #efead863, #f1ecdc63, #f2efe163, #f4f1e663, #f5f3e963, #f7f4ec63, #f8f6ef63, #f9f8f163, #faf9f363, #fcfbf563, #fdfcf763);
+  background-image: radial-gradient(circle, #ede8d3, #efead8, #f1ecdc, #f2efe1, #f4f1e6, #f5f3e9, #f7f4ec, #f8f6ef, #f9f8f1, #faf9f3, #fcfbf5, #fdfcf7);
 
 }
 
@@ -22,7 +22,7 @@ body{
   position: absolute;
   top:0;
   left:0;
-  z-index: 5;
+  z-index: 15;
 }
 
 /*the central image*/
@@ -41,7 +41,7 @@ body{
 .img_container::after{
   content: '';
   inset: 0;
-  z-index: 4;
+  z-index: 14;
   background-image: radial-gradient(circle, #ede8d362, #efead862, #f1ecdc62, #f2efe162, #f4f1e662, #f5f3e962, #f7f4ec62, #f8f6ef62, #f9f8f162, #faf9f362, #fcfbf562, #fdfcf762);
   position: absolute;
   mix-blend-mode: overlay;
@@ -54,81 +54,150 @@ body{
   margin-inline: 82px;
   border-radius: 4vw;
 }
-
-.hero_img{
+.hero_img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: 1;
   position: absolute;
-
+  background-color: #ede8d3;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: block;
   opacity: 0;
-  display: block; 
-
-  animation: FadeTransition 42s infinite;
-  animation-fill-mode: both;
-
-  animation-delay: calc(var(--index, 0) * 3s);
 }
-.main_img_text{
-  position: absolute;
-  bottom: 120px;
-  left: 135px;
-  padding: 0;
-  margin: 0;
-  z-index: 5;
+/* Set individual background images */
+.img1 { background-image: url(./imgs/replica_s1.jpg); }
+.img2 { background-image: url(./imgs/martini.jpg); }
+.img3 { background-image: url(./imgs/jps.jpg); }
+.img4 { background-image: url(./imgs/quattro_s1.avif); }
+.img5 { background-image: url(./imgs/lancia3.webp); }
+.img6 { background-image: url(./imgs/gulf.webp); }
+.img7 { background-image: url(./imgs/lancia2.jpg); }
+.img8 { background-image: url(./imgs/lancia4.jpg); }
+.img9 { background-image: url(./imgs/jpsC.png); }
+.img10 { background-image: url(./imgs/michael_schumacher_ferrari_marlboro3.jpg); }
+.img11 { background-image: url(./imgs/senna_marl.jpg); }
+.img12 { background-image: url(./imgs/porsche_917.webp); }
+.img13 { background-image: url(./imgs/Roman-Rudnicki-Marian-Bubel-Bublewiczs-Ford-Marlboro-rally-cars-11.webp); }
+
+
+/* Animation for each image */
+.img1 { animation: fade1 85s infinite; }
+.img2 { animation: fade2 85s infinite; }
+.img3 { animation: fade3 85s infinite; }
+.img4 { animation: fade4 85s infinite; }
+.img5 { animation: fade5 85s infinite; }
+.img6 { animation: fade6 85s infinite; }
+.img7 { animation: fade7 85s infinite; }
+.img8 { animation: fade8 85s infinite; }
+.img9 { animation: fade9 85s infinite; }
+.img10 { animation: fade10 85s infinite; }
+.img11 { animation: fade11 85s infinite;}
+.img12 { animation: fade12 85s infinite;}
+.img13 { animation: fade13 85s infinite;}
+
+/*an interlacing of fades and transitions. As each fade ends, the next one begins.*/
+
+@keyframes fade1 {
+  0% { opacity: 0; }
+  1%, 6% { opacity: 1; }
+  7%, 9% { opacity: 0; }
+  10%, 100% { opacity: 0; }
 }
 
-.img_container .hero_img {
-  --index: 0;
+@keyframes fade2 {
+  0%, 6% { opacity: 0; }
+  7%, 13% { opacity: 1; }
+  14%, 16% { opacity: 0; }
+  17%, 100% { opacity: 0; }
 }
 
-.img_container .hero_img:nth-child(1) { --index: 0; }
-.img_container .hero_img:nth-child(2) { --index: 1; }
-.img_container .hero_img:nth-child(3) { --index: 2; }
-.img_container .hero_img:nth-child(4) { --index: 3; }
-.img_container .hero_img:nth-child(5) { --index: 4; }
-.img_container .hero_img:nth-child(6) { --index: 5; }
-.img_container .hero_img:nth-child(7) { --index: 6; }
-.img_container .hero_img:nth-child(8) { --index: 7; }
-.img_container .hero_img:nth-child(9) { --index: 8; }
-.img_container .hero_img:nth-child(10) { --index: 9; }
-.img_container .hero_img:nth-child(11) { --index: 10; }
-
-
-@keyframes FadeTransition{
-  0%{
-    opacity: 0;
-    display: block;
-    z-index: 2;
-  }
-  4%{
-    opacity: 1;
-  }
-  46%{
-    opacity: 1;
-  }
-  50%{
-    opacity: 0;
-  }
-  51%{
-    display: none;
-    z-index: 1;
-  }
-
-
-  100%{
-    opacity: 0;
-
-  }
-
+@keyframes fade3 {
+  0%, 13% { opacity: 0; }
+  14%, 20% { opacity: 1; }
+  21%, 23% { opacity: 0; }
+  24%, 100% { opacity: 0; }
 }
+
+@keyframes fade4 {
+  0%, 20% { opacity: 0; }
+  21%, 27% { opacity: 1; }
+  28%, 30% { opacity: 0; }
+  31%, 100% { opacity: 0; }
+}
+
+@keyframes fade5 {
+  0%, 27% { opacity: 0; }
+  28%, 34% { opacity: 1; }
+  35%, 37% { opacity: 0; }
+  38%, 100% { opacity: 0; }
+}
+
+@keyframes fade6 {
+  0%, 34% { opacity: 0; }
+  35%, 41% { opacity: 1; }
+  42%, 44% { opacity: 0; }
+  45%, 100% { opacity: 0; }
+}
+
+@keyframes fade7 {
+  0%, 41% { opacity: 0; }
+  42%, 48% { opacity: 1; }
+  49%, 51% { opacity: 0; }
+  52%, 100% { opacity: 0; }
+}
+
+@keyframes fade8 {
+  0%, 48% { opacity: 0; }
+  49%, 55% { opacity: 1; }
+  56%, 58% { opacity: 0; }
+  59%, 100% { opacity: 0; }
+}
+
+@keyframes fade9 {
+  0%, 55% { opacity: 0; }
+  56%, 62% { opacity: 1; }
+  63%, 65% { opacity: 0; }
+  66%, 100% { opacity: 0; }
+}
+
+@keyframes fade10 {
+  0%, 62% { opacity: 0; }
+  63%, 69% { opacity: 1; }
+  70%, 72% { opacity: 0; }
+  73%, 100% { opacity: 0; }
+}
+
+@keyframes fade11 {
+  0%, 69% { opacity: 0; }
+  70%, 76% { opacity: 1; }
+  77%, 79% { opacity: 0; }
+  80%, 100% { opacity: 0; }
+}
+
+@keyframes fade12 {
+  0%, 76% { opacity: 0; }
+  77%, 83% { opacity: 1; }
+  84%, 86% { opacity: 0; }
+  87%, 100% { opacity: 0; }
+}
+
+@keyframes fade13 {
+  0%, 83% { opacity: 0; }
+  84%, 93% { opacity: 1; }
+  94%, 95% { opacity: 0; }
+  96%, 100% { opacity: 0; }
+}
+
+
 
 
 body:hover .img_container {
   width: 70%;
   height: 70%;
-  transform: translateY(17%);
+  transform: translateY(15%);
 }
 
 body:hover .img_container::after {
