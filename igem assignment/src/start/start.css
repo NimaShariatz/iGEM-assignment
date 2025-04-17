@@ -34,6 +34,8 @@ body{
 
   position: relative;
   margin:auto;
+  outline: 20px solid #ede8d3;
+  
 
 }
 
@@ -59,7 +61,7 @@ body{
   height: 100%;
   z-index: 1;
   position: absolute;
-  background-color: #ede8d3;
+  background-color: var(--background);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
