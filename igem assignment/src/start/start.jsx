@@ -2,7 +2,7 @@
 import logo from '../assets/imgs/CAL_logo.png'
 
 
-import './login.css'
+import './start.css'
 
 function App() {
   //The parent div covers the entire screen. Thereby stretching the
