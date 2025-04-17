@@ -67,6 +67,28 @@ body{
   display: block;
   opacity: 0;
 }
+
+
+.img_text_section{
+  position: absolute;
+  bottom: 120px;
+  left: 110px;
+  z-index: 10;
+  padding: 15px;
+  color: white;
+
+}
+
+.img_text_section h1, .img_text_section h1{
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+
+}
+.img_text_section h3{
+  opacity: 0.7;
+}
+
+
+
 /* Set individual background images */
 .img1 { background-image: url(./imgs/replica_s1.jpg); }
 .img2 { background-image: url(./imgs/martini.jpg); }
@@ -76,7 +98,7 @@ body{
 .img6 { background-image: url(./imgs/gulf.webp); }
 .img7 { background-image: url(./imgs/lancia2.jpg); }
 .img8 { background-image: url(./imgs/lancia4.jpg); }
-.img9 { background-image: url(./imgs/jpsC.png); }
+.img9 { background-image: url(./imgs/Roman-Rudnicki-Marian-Bubel-Bublewiczs-Ford-Marlboro-rally-cars-9.webp); }
 .img10 { background-image: url(./imgs/michael_schumacher_ferrari_marlboro3.jpg); }
 .img11 { background-image: url(./imgs/senna_marl.jpg); }
 .img12 { background-image: url(./imgs/porsche_917.webp); }
