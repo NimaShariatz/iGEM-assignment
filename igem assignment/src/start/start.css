@@ -221,7 +221,8 @@ body{
 body:hover .img_container {
   width: 70%;
   height: 70%;
-  transform: translateY(15%);
+  
+  
 }
 
 body:hover .img_container::after {

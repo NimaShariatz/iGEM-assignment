@@ -85,5 +85,5 @@ h3{
 ::selection {
 color: #1c1c1c;
     /*background: #46cb9f;*/
-    background: var(--blue1);
+    background: var(--blue4);
 }  
