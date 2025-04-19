@@ -239,7 +239,7 @@ body:hover .img_container::after {
 
 .menu_container{
   position:absolute;
-  bottom: 45px;
+  bottom: 6%;
   left: 0;
   display:flex;
   width:100%;

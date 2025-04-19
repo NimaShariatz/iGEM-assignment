@@ -123,11 +123,11 @@ function Start() {
         </div>{/*.img_container*/}
 
       <div className='menu_container'>
-        <div style={{display:"flex", gap:"10px"}}>{/*When CSS is hardcoded by 'style=', it ignores anything in start.css.
+        <div style={{display:"flex", gap:"3.5vw"}}>{/*When CSS is hardcoded by 'style=', it ignores anything in start.css.
         This includes the @media query used(for smaller screen widths. mobile). Hence 'style=' should be used sparingly as its bad practice*/}
 
           
-          <Link to={"/marlboro-club"} style={{width:"100%", height:"100%"}}>
+          <Link to={"/marlboro-club"}>
             <img src={marl_logo} alt="marlboro logo" className='menu_background_img'/>
           </Link>
 
