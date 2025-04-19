@@ -1,10 +1,15 @@
 
 import logo from '../assets/imgs/CAL_logo.png'
-
+import marl_logo from './imgs/marl_red.png'
+import quattro_logo from './imgs/audi_logo.png'
+import martini_logo from './imgs/martini_logo.png'
+import jps_logo from './imgs/jps-logo2clear.png'
+import gulf_logo from './imgs/Gulf_Oil_Logo.png'
 
 import './start.css'
+import { Link } from 'react-router-dom'
 
-function App() {
+function Start() {
   //The parent div covers the entire screen. Thereby stretching the
   //body with it
 
@@ -117,13 +122,21 @@ function App() {
 
         </div>{/*.img_container*/}
 
-      <div style={{position:"absolute", bottom:"50px", left:"0", display:"flex", width:"100%", justifyContent:"center"}}>
-        <div style={{backgroundColor:"red", display:"flex"}}>
-          <p>Marlborough Club</p>
-          <p>Quattro Club</p>
-          <p>Martini Club</p>
-          <p>JPS Club</p>
-          <p>Gulf Club</p>
+      <div className='menu_container'>
+        <div style={{display:"flex", gap:"70px"}}>
+          
+          <Link to={"/marlboro-club"} style={{width:"100%", height:"100%"}}>
+            <img src={marl_logo} alt="marlboro logo" className='menu_background_img'/>
+          </Link>
+
+          <img src={quattro_logo} alt="quattro logo" className='menu_background_img'/>
+
+          <img src={martini_logo} alt="martini logo" className='menu_background_img'/>
+
+          <img src={jps_logo} alt="jps logo" className='menu_background_img'/>
+
+          <img src={gulf_logo} alt="gulf logo" className='menu_background_img'/>
+
         </div>
       </div>
 
@@ -132,4 +145,4 @@ function App() {
   )
 }
 
-export default App
+export default Start
