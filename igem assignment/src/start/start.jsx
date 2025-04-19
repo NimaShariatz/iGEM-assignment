@@ -21,7 +21,7 @@ function Start() {
   //when body is hovered on, width and height of img_container is reduced
     
   return (
-    <div style={{height:"100vh", minWidth:"100vw", display:'flex'}}>
+    <div style={{height:"100vh", minWidth:"100vw", display:'flex'}}> {/*have our image container match screen width and height*/}
         <div className='logo_container'>
           <img className='logo' src={logo} alt="Classic Autosport Liveries Logo"/>
         </div>
@@ -30,7 +30,7 @@ function Start() {
 
           <div className='hero_img img1'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Audi Quattro S1 &#40;1985&#41;</h1>
+              <h1>Audi Quattro S1 &#40;1985&#41;</h1>
               <h3>World Rally Championship</h3>
             </div>
           </div>
@@ -38,84 +38,84 @@ function Start() {
 
           <div className='hero_img img2'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Lancia 037 &#40;1982&#41;</h1>
+              <h1>Lancia 037 &#40;1982&#41;</h1>
               <h3>World Rally Championship</h3>
             </div>
           </div>
 
           <div className='hero_img img3'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Lotus 98T &#40;1986&#41;</h1>
+              <h1>Lotus 98T &#40;1986&#41;</h1>
               <h3>Formula One</h3>
             </div>
           </div>
 
           <div className='hero_img img4'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Audi Quattro S1 &#40;1985&#41;</h1>
+              <h1>Audi Quattro S1 &#40;1985&#41;</h1>
               <h3>World Rally Championship</h3>
             </div>
           </div>
 
           <div className='hero_img img5'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Lotus 98T &#40;1986&#41;</h1>
+              <h1>Lotus 98T &#40;1986&#41;</h1>
               <h3>World Rally Championship</h3>
             </div>
           </div>
 
           <div className='hero_img img6'>
             <div className='img_text_section'>
-              <h1 className='img_text'>McLaren F1 GTR &#40;1997&#41;</h1>
+              <h1>McLaren F1 GTR &#40;1997&#41;</h1>
               <h3>GT Championship</h3>
             </div>
           </div>
 
           <div className='hero_img img7'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Lancia Delta S4 &#40;1985&#41;</h1>
+              <h1>Lancia Delta S4 &#40;1985&#41;</h1>
               <h3>Group B</h3>
             </div>
           </div>
 
           <div className='hero_img img8'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Lancia 037 &#40;1982&#41;</h1>
+              <h1>Lancia 037 &#40;1982&#41;</h1>
               <h3>World Rally Championship</h3>
             </div>
           </div>
 
           <div className='hero_img img9'>
             <div className='img_text_section'>
-            <h1 className='img_text'>Sierra Cosworth RSes &#40;1993&#41;</h1>
-            <h3>Group A</h3>
+              <h1>Sierra Cosworth RSes &#40;1993&#41;</h1>
+              <h3>Group A</h3>
             </div>
           </div>
 
           <div className='hero_img img10'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Ferrari F2004</h1>
+              <h1>Ferrari F2004</h1>
               <h3>Formula One</h3>
             </div>
           </div>
 
           <div className='hero_img img11'>
             <div className='img_text_section'>
-              <h1 className='img_text'>McLaren MP4/5 &#40;1989&#41;</h1>
+              <h1>McLaren MP4/5 &#40;1989&#41;</h1>
               <h3>Formula One</h3>
             </div>
           </div>
 
           <div className='hero_img img12'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Porsche 917 &#40;1969&#41;</h1>
+              <h1>Porsche 917 &#40;1969&#41;</h1>
               <h3>World Sportscar Championship</h3>
             </div>
           </div>
 
           <div className='hero_img img13'>
             <div className='img_text_section'>
-              <h1 className='img_text'>Sierra Cosworth RSes &#40;1993&#41;</h1>
+              <h1>Sierra Cosworth RSes &#40;1993&#41;</h1>
               <h3>Group A</h3>
             </div>
           </div>
@@ -123,7 +123,9 @@ function Start() {
         </div>{/*.img_container*/}
 
       <div className='menu_container'>
-        <div style={{display:"flex", gap:"70px"}}>
+        <div style={{display:"flex", gap:"10px"}}>{/*When CSS is hardcoded by 'style=', it ignores anything in start.css.
+        This includes the @media query used(for smaller screen widths. mobile). Hence 'style=' should be used sparingly as its bad practice*/}
+
           
           <Link to={"/marlboro-club"} style={{width:"100%", height:"100%"}}>
             <img src={marl_logo} alt="marlboro logo" className='menu_background_img'/>
