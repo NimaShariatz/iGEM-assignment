@@ -1,7 +1,7 @@
 import './marl_club.css'
 import logo from '../assets/imgs/CAL_logo.png'
 
-
+import Component from './component'
 
 
 
@@ -25,7 +25,20 @@ function Marl_club() {
                     <p>MARLBORO CLUB</p>
                     <div className='submenu_container'>
 
-                    </div>
+                        <div className='submenu_flex'>
+                            <div className='left_section'>
+                                <div className='left_section_column'>
+
+                                </div>
+                            </div>{/* left_section */}
+
+                            <div className='right_section'>
+
+                            </div>{/* right_section */}
+
+                        </div>{/* submenu_flex */}
+
+                    </div>{/* submenu_container */}
                 </li>
 
                 <li>
