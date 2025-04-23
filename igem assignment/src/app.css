@@ -12,6 +12,8 @@
     --blue2: #0081ae;
     --blue3:#0097bf;
     --blue4:#4bc5d2;
+
+    --yellowV1:#ede8d3ad;
   
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -47,6 +49,7 @@ body {
     display: flex;
     min-width: 100%;
     min-height: 100vh;
+    color: #1c1c1c;
 }
 
 h1{
