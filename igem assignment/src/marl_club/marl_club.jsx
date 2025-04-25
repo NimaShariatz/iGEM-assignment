@@ -18,10 +18,11 @@ function Marl_club() {
 
     return(
         <div style={{display:"flex", flexDirection:"column", width:"100vw", overflow:"hidden"}}>
-            <Menu/>
+            
+            <Menu/> 
 
 
-
+            {/* Section 1 */}
             
             <div className='flex_content'>
                 <div className='text_section'>
@@ -37,8 +38,10 @@ function Marl_club() {
                 </div>
             </div>
             
+            {/* Section 1 */}
 
-            
+
+            {/* Section 2 */}
 
             <div className='ayert_background'>
                 <div className='dark_gradient'>
@@ -46,7 +49,10 @@ function Marl_club() {
                 </div>
             </div>
 
-            
+            {/* Section 2 */}
+
+            {/* Section 3 */}
+
             <div className='ayert_text'>
                 <p>
                     Their sponsorship figures were high enough such that they could
@@ -60,6 +66,9 @@ function Marl_club() {
 
             </div>
 
+            {/* Section 3 */}
+
+            {/* Section 4 */}
 
             <div className='grid_layout'>
 
@@ -69,6 +78,8 @@ function Marl_club() {
                 <img src={mansell}/>
 
             </div>
+
+            {/* Section 4 */}
 
 
         </div>
