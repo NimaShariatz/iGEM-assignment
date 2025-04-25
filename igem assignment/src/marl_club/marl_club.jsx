@@ -4,14 +4,14 @@ import './menu.css'
 
 import Menu from './Menu' //menu component
 import marlboro_video1 from './video/Marlboro_f1V2.mp4'
-import ayert from './imgs/ayert1.jpg'
+import ayert2 from './imgs/ayert2.jpg'
 
 
 
 function Marl_club() {
 
     return(
-        <div>
+        <div style={{display:"flex", flexDirection:"column", width:"100vw", overflow:"hidden"}}>
             <Menu/>
 
 
@@ -34,15 +34,25 @@ function Marl_club() {
 
             
 
-                <div className='ayert_background'>
-                    <div className='dark_gradient'>
-                        <h1 className='formula_text'>Formula One</h1>
-                    </div>
-
+            <div className='ayert_background'>
+                <div className='dark_gradient'>
+                    <h1 className='formula_text'>Formula One</h1>
                 </div>
+            </div>
 
             
-            <p>asdasdasd</p>
+            <div className='ayert_text'>
+                <p>
+                    Their sponsorship figures were high enough such that they could
+                    dictate the color scheme to some extent. Outside of tobacco advertisers, there have not been many examples of companies willing to pay enough to do so. Few 
+                    would be more iconic than Ayrton Senna's Mclaren &#40;1988-1993&#41;. The Marlboro livery is one of those rare liveries that stays on your mind on first glance. A use of contrasting colors with complimentary tones, shapes and shades would be used. 
+                    The early and later Marlboro liveries were a bit different but the rendition seen on the picture with Senna has become one of the most iconic tobacco liveries and one of the best liveries ever seen in racing in general.
+                    Marlboro sponsorship extended beyond the vehicle as well. A driver's suit would be endowed with sponsorships, and by extention Marlboro embossing.
+                </p>
+
+                <img src={ayert2} alt="Ayrton Senna"/>
+
+            </div>
 
 
         </div>

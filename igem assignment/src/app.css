@@ -1,10 +1,14 @@
 :root {
 
+    --title_text:rgba(255, 255, 255, 0.686);
+
     --background: #ede8d3;
     --blue1:#00527e;
     --blue2: #0081ae;
     --blue3:#0097bf;
     --blue4:#4bc5d2;
+
+    --darkBackground:rgba(0, 0, 0, 0.463);
 
     --yellowV1:#ede8d3ad;
   
@@ -91,7 +95,9 @@
     box-sizing: border-box;
 }
   
-  
+html{
+    overflow-x: hidden;
+}
   
 body {
     margin: 0;
