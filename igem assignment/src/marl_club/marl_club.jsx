@@ -3,7 +3,7 @@ import './menu.css'
 
 
 import Menu from './Menu' //menu component
-import marlboro_video1 from './video/Marlboro_f1V2.mp4'
+import marlboro_video1 from './video/ayrton_vid.mp4'
 import ayert2 from './imgs/ayert2.jpg'
 
 
