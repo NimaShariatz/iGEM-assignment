@@ -1,12 +1,13 @@
-# React + Vite
+# React + Vite iGEM-assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A barrier of entry to new wiki members which exists to better prepare them for the frontend project
 
-Currently, two official plugins are available:
+On setup, run the following
+`npm install`
+`npm install react-router-dom`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Do `npm run dev` to run the React project.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Part 1 link: `http://localhost:5173/`
+Part 2 link: `http://localhost:5173/marlboro-club`
