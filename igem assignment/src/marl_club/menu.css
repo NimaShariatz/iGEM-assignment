@@ -137,3 +137,21 @@
 .menu_option_red{
     color: white;
 }
+
+
+
+@media (max-width: 860px) {
+    .club{
+        font-size: 1.5vw;
+    }
+    .menu_container ul{
+        gap:1.2vw;
+    }
+    .menu_title{
+        font-size: 2vw;
+    }
+    .menu_logo{
+        height: 7vw;
+    }
+
+}
