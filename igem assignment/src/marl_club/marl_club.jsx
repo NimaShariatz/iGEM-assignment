@@ -7,6 +7,12 @@ import marlboro_video1 from './video/ayrton_vid.mp4'
 import ayert2 from './imgs/ayert2.jpg'
 
 
+import marlboro_car from './imgs/marlboro_car.jpg'
+import marlboro_car2 from './imgs/marlboro_car2.jpg'
+import mansell from './imgs/mansell.webp'
+import prost_marl from './imgs/Prost-Malboro.jpg'
+
+
 
 function Marl_club() {
 
@@ -51,6 +57,16 @@ function Marl_club() {
                 </p>
 
                 <img src={ayert2} alt="Ayrton Senna"/>
+
+            </div>
+
+
+            <div className='grid_layout'>
+
+                <img src={marlboro_car}/>
+                <img src={prost_marl}/>
+                <img src={marlboro_car2}/>
+                <img src={mansell}/>
 
             </div>
 
