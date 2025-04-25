@@ -5,6 +5,7 @@
     height: 70px;
     background-color: var(--background);
     position: fixed; /*this is what makes it sticky*/
+    z-index: 100;
 }
 
 .menu_container ul{
