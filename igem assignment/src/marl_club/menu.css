@@ -5,6 +5,7 @@
     height: 70px;
     background-color: var(--background);
     position: fixed; /*this is what makes it sticky*/
+    top:0;
     z-index: 100;
 }
 
