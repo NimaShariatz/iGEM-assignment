@@ -18,8 +18,7 @@ function Marl_club() {
 
     return(
         <div style={{display:"flex", flexDirection:"column", width:"100vw", overflow:"hidden"}}>
-            
-            <Menu/> 
+            <Menu/>
 
 
             {/* Section 1 */}
